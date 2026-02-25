@@ -1,7 +1,7 @@
-import React from 'react'
+import '../styles/Productos.css';
 
 export const Productos = () => {
   return (
-    <div>Productos</div>
+    <div className="productos">Productos</div>
   )
 }

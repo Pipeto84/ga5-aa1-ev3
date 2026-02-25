@@ -1,7 +1,7 @@
-import React from 'react'
+import '../styles/Contactos.css';
 
 export const Contactos = () => {
   return (
-    <div>Contactos</div>
+    <div className="contactos">Contactos</div>
   )
 }
