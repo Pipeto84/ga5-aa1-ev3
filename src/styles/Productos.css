@@ -5,3 +5,18 @@
   height: 70vh;
   font-size: 20px;
 }
+.contenedor-compras {
+  max-width: 76.25rem;
+  margin: auto;
+}
+.tituloProductos {
+  text-align: center;
+  margin: 1.25rem;
+  color: green;
+}
+.productos-grid {
+  max-width: 76.25rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  grid-template-rows: auto 1fr auto auto;
+}

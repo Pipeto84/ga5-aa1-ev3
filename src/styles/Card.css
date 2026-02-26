@@ -23,22 +23,16 @@
   border-radius: 4px;
   grid-row: span 2;
 }
-.tarjeta-contenido {
+.card-info {
   grid-row: span 4;
   display: grid;
   grid-template-rows: subgrid;
 }
-.tarjeta-titulo {
-  margin: 0;
-}
-.tarjeta-descripcion {
-  margin: 10px 0;
-}
-.tarjeta-precio {
+.card-precio {
   margin: 0;
   font-weight: bold;
 }
-.boton-agregar {
+.button-buy {
   background-color: #4caf50;
   color: white;
   border: none;
@@ -47,6 +41,6 @@
   cursor: pointer;
   justify-self: end;
 }
-.boton-agregar:hover {
+.button-buy:hover {
   background-color: #45a049;
 }
