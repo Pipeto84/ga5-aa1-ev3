@@ -27,7 +27,7 @@
   grid-template-rows: subgrid;
   gap: 30px;
 }
-.valor-comprar{
+.valor-comprar {
   display: flex;
   justify-content: space-around;
   align-items: center;

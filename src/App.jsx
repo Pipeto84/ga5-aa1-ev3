@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import {Footer} from './components/Footer'
-import { Home } from "./pages/Home";
+import { Inicio } from "./pages/Inicio";
 import { Productos } from "./pages/Productos";
 import { Nosotros } from "./pages/Nosotros";
 import {Mapa} from './pages/Mapa'
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Inicio />} />
           <Route path="/Productos" element={<Productos />} />
           <Route path="/Nosotros" element={<Nosotros />} />
           <Route path="/Mapa" element={<Mapa />} />
