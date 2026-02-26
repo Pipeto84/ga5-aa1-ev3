@@ -63,7 +63,7 @@ const productos = [
 export const Productos = () => {
   return (
     <div className="productos">
-      <h1>Productos</h1>
+      <h1 className="titulo">Productos</h1>
       <div className="productos-grid">
         {productos.map((producto) => (
           <Card key={producto.id} producto={producto} />
