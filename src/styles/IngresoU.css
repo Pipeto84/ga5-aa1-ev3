@@ -1,0 +1,40 @@
+.ingresoU {
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenido-ingresoU {
+  background-color: rgb(209, 209, 209);
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-ingresoU {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 50px;
+} 
+.texto-ingresoU {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+.boton-ingresoU {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(238, 87, 27);
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-top: 60px;
+}

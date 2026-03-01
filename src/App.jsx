@@ -6,7 +6,9 @@ import { Productos } from "./pages/Productos";
 import { Nosotros } from "./pages/Nosotros";
 import { Mapa } from "./pages/Mapa";
 import { Sesion } from "./pages/Sesion";
-import {Registrar} from './components/Registrar'
+import { Registrar } from "./components/Registrar";
+import { Error } from "./components/ErrorU";
+import { IngresoU } from "./components/IngresoU";
 import "./styles/App.css";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="/Mapa" element={<Mapa />} />
           <Route path="/Sesion" element={<Sesion />} />
           <Route path="/Registrar" element={<Registrar />} />
+          <Route path="/Error" element={<Error />} />
+          <Route path="/IngresoU" element={<IngresoU />} />
         </Routes>
         <Footer />
       </BrowserRouter>

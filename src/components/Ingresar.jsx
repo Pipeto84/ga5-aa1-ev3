@@ -1,6 +1,7 @@
 import "../styles/Ingresar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { Error } from "../components/ErrorU";
 
 export function Ingresar() {
   var Usuarios = [
@@ -36,9 +37,11 @@ export function Ingresar() {
     if (usuarioEncontrado) {
       setAcceso(true);
       console.log("Acceso concedido");
+      window.location.href = "/IngresoU";
     } else {
       setAcceso(false);
       console.log("Acceso denegado");
+      window.location.href = "/Error";
     }
   };
 
