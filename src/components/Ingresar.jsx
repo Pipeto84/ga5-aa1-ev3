@@ -1,10 +1,12 @@
 import "../styles/Ingresar.css";
+import '../styles/IngresoU.css'
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import {useDispatch, useSelector} from 'react-redux'
+import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../features/user/userSlice";
 
 export function Ingresar() {
+  const [acceso, setAcceso] = useState(false);
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
   var Usuarios = [
@@ -42,44 +44,54 @@ export function Ingresar() {
         u.Usuario === usuario.Usuario && u.contrasena === usuario.contrasena,
     );
     if (usuarioEncontrado) {
-      setUsuario({...usuario, acceso: true});
-      dispatch(setUser({...usuario, acceso: true}));
-      // window.location.href = "/IngresoU";
-      console.log(user)
+      setAcceso(true);
+      setUsuario({ ...usuario, acceso: true });
+      dispatch(setUser({ ...usuario, acceso: true }));
+      console.log(user);
     } else {
       window.location.href = "/ErrorU";
     }
   };
-
   return (
     <div className="ingresar">
-      <div className="contenido-ingresar">
-        <h3 className="titulo-ingresar">Iniciar Sesion</h3>
-        <div className="formulario-ingresar">
-          <label className="label-ingresar1">Usuario</label>
-          <input
-            type="text"
-            placeholder="Escribe tu usuario"
-            className="input-ingresar1"
-            onChange={handleChange}
-            name="Usuario"
-          />
-          <label className="label-ingresar2">Contraseña</label>
-          <input
-            type="text"
-            placeholder="Escribe tu contraseña"
-            className="input-ingresar2"
-            onChange={handleChange}
-            name="contrasena"
-          />
+      {!acceso && (
+        <div className="contenido-ingresar">
+          <h3 className="titulo-ingresar">Iniciar Sesion</h3>
+          <div className="formulario-ingresar">
+            <label className="label-ingresar1">Usuario</label>
+            <input
+              type="text"
+              placeholder="Escribe tu usuario"
+              className="input-ingresar1"
+              onChange={handleChange}
+              name="Usuario"
+            />
+            <label className="label-ingresar2">Contraseña</label>
+            <input
+              type="text"
+              placeholder="Escribe tu contraseña"
+              className="input-ingresar2"
+              onChange={handleChange}
+              name="contrasena"
+            />
+          </div>
+          <button className="boton-ingresar" onClick={handleSubmit}>
+            Ingresar
+          </button>
+          <NavLink to="/registrar" className="registro-link">
+            Registrarse
+          </NavLink>
         </div>
-        <button className="boton-ingresar" onClick={handleSubmit}>
-          Ingresar
-        </button>
-        <NavLink to="/registrar" className="registro-link">
-          Registrarse
-        </NavLink>
-      </div>
+      )}
+      {acceso && (
+        <div className="contenido-ingresoU">
+          <h3 className="titulo-ingresoU">Bienvenido</h3>
+          <h5 className="texto-ingresoU">Tu ingreso fue exitoso</h5>
+          <NavLink to="/" className="boton-ingresoU">
+            Regresar
+          </NavLink>
+        </div>
+      )}
     </div>
   );
 }
