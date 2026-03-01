@@ -1,7 +1,6 @@
 import "../styles/Ingresar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { Error } from "../components/ErrorU";
 
 export function Ingresar() {
   var Usuarios = [
@@ -36,12 +35,10 @@ export function Ingresar() {
     );
     if (usuarioEncontrado) {
       setAcceso(true);
-      console.log("Acceso concedido");
       window.location.href = "/IngresoU";
     } else {
       setAcceso(false);
-      console.log("Acceso denegado");
-      window.location.href = "/Error";
+      window.location.href = "/ErrorU";
     }
   };
 
@@ -58,10 +55,10 @@ export function Ingresar() {
             onChange={handleChange}
             name="Usuario"
           />
-          <label className="label-ingresar2">Contrasena</label>
+          <label className="label-ingresar2">Contraseña</label>
           <input
             type="text"
-            placeholder="Escribe tu contrasena"
+            placeholder="Escribe tu contraseña"
             className="input-ingresar2"
             onChange={handleChange}
             name="contrasena"
