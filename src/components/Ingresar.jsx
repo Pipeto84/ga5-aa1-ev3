@@ -47,7 +47,6 @@ export function Ingresar() {
       setAcceso(true);
       setUsuario({ ...usuario, acceso: true });
       dispatch(setUser({ ...usuario, acceso: true }));
-      console.log(user);
     } else {
       window.location.href = "/ErrorU";
     }

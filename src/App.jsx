@@ -8,7 +8,6 @@ import { Mapa } from "./pages/Mapa";
 import { Sesion } from "./pages/Sesion";
 import { Registrar } from "./components/Registrar";
 import { ErrorU } from "./components/ErrorU";
-import { IngresoU } from "./components/IngresoU";
 import "./styles/App.css";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <Route path="/Sesion" element={<Sesion />} />
           <Route path="/Registrar" element={<Registrar />} />
           <Route path="/ErrorU" element={<ErrorU />} />
-          <Route path="/IngresoU" element={<IngresoU />} />
         </Routes>
         <Footer />
       </BrowserRouter>
