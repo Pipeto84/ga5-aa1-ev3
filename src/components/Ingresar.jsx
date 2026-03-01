@@ -1,8 +1,12 @@
 import "../styles/Ingresar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import {useDispatch, useSelector} from 'react-redux'
+import { setUser } from "../features/user/userSlice";
 
 export function Ingresar() {
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.user);
   var Usuarios = [
     {
       Usuario: "Felipe",
@@ -38,8 +42,10 @@ export function Ingresar() {
         u.Usuario === usuario.Usuario && u.contrasena === usuario.contrasena,
     );
     if (usuarioEncontrado) {
-      setUsuario(usuario=>({...usuario, acceso: true}));
-      window.location.href = "/IngresoU";
+      setUsuario({...usuario, acceso: true});
+      dispatch(setUser({...usuario, acceso: true}));
+      // window.location.href = "/IngresoU";
+      console.log(user)
     } else {
       window.location.href = "/ErrorU";
     }

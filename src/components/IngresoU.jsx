@@ -1,9 +1,12 @@
 import "../styles/IngresoU.css"
+import {useSelector} from 'react-redux'
 
 export function IngresoU() {
+    const user = useSelector((state) => state.user);
     const handleRegresar = () => {
     window.location.href = "/";
   }
+  console.log(user)
   return (
     <div className="ingresoU">
       <div className="contenido-ingresoU">
