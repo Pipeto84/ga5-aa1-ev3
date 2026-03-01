@@ -1,6 +1,6 @@
 .nosotros {
   font-family: "Arial", sans-serif;
-  background-color: #dfdeda;
+  background-image: url("../assets/Fondo.jpeg");
   width: 100%;
   height: 80vh;
   font-size: 20px;
@@ -15,6 +15,17 @@
   width: 900px;
   margin-top: 30px;
 }
+.infoNosotros {
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #4682B4;
+  margin: 10px;
+  width: 860px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
 .otraInfo {
   display: flex;
   justify-content: space-around;
@@ -26,7 +37,7 @@
   border-radius: 20px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #DE9A10;
+  background-color: #769fc0;
   margin: 10px;
   width: 300px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
@@ -36,7 +47,7 @@
   border-radius: 20px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #DE9A10;
+  background-color: #769fc0;
   margin: 10px;
   width: 300px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
@@ -46,7 +57,7 @@
   border-radius: 20px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #DE9A10;
+  background-color: #769fc0;
   margin: 10px;
   width: 300px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
