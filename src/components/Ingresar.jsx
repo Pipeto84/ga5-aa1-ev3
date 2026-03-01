@@ -16,11 +16,16 @@ export function Ingresar() {
       Usuario: "Cristian",
       contrasena: "24680",
     },
+    {
+      Usuario: "q",
+      contrasena: "1",
+    },
   ];
   const [acceso, setAcceso] = useState(false);
   const [usuario, setUsuario] = useState({
     Usuario: "",
     contrasena: "",
+    acceso: false,
   });
   const handleChange = (e) => {
     setUsuario({
@@ -35,10 +40,13 @@ export function Ingresar() {
     );
     if (usuarioEncontrado) {
       setAcceso(true);
+      setUsuario(usuario=>({...usuario, acceso: true}));
+      console.log(usuario);
       window.location.href = "/IngresoU";
     } else {
       setAcceso(false);
       window.location.href = "/ErrorU";
+      console.log(usuario);
     }
   };
 
