@@ -16,7 +16,7 @@ export function Ingresar() {
       Usuario: "Cristian",
       contrasena: "24680",
     },
-  ]
+  ];
   const [acceso, setAcceso] = useState(false);
   const [usuario, setUsuario] = useState({
     Usuario: "",
@@ -27,6 +27,19 @@ export function Ingresar() {
       ...usuario,
       [e.target.name]: e.target.value,
     });
+  };
+  const handleSubmit = () => {
+    const usuarioEncontrado = Usuarios.find(
+      (u) =>
+        u.Usuario === usuario.Usuario && u.contrasena === usuario.contrasena,
+    );
+    if (usuarioEncontrado) {
+      setAcceso(true);
+      console.log("Acceso concedido");
+    } else {
+      setAcceso(false);
+      console.log("Acceso denegado");
+    }
   };
 
   return (
@@ -51,7 +64,9 @@ export function Ingresar() {
             name="contrasena"
           />
         </div>
-        <button className="boton-ingresar" onClick={() => console.log(usuario)}>Ingresar</button>
+        <button className="boton-ingresar" onClick={handleSubmit}>
+          Ingresar
+        </button>
         <NavLink to="/registrar" className="registro-link">
           Registrarse
         </NavLink>
