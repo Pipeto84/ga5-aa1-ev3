@@ -10,7 +10,7 @@ export const Inicio = () => {
     <div className="inicio">
       <div className="contInicio">
         <img src={inicio1} className="imagenInicio" alt="inicio1" />
-        <h2 className="infoInicio">Bienvenidos a<hr/> Radiadores S&T</h2>
+        <p className="infoInicio">Bienvenidos a<hr/> Radiadores S&T</p>
         <img src={inicio4} className="imagenInicio" alt="inicio4" />
         <img src={inicio2} className="imagenInicio" alt="inicio2" />
         <img src={logo} className="logo" alt="logo" />

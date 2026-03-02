@@ -24,7 +24,7 @@ export const Mapa = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/sesion" className="nav-link-mapa">
+          <NavLink to="/ingresar" className="nav-link-mapa">
             Iniciar sesión
           </NavLink>
         </li>

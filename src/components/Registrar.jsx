@@ -18,27 +18,32 @@ export function Registrar() {
     });
   };
   const handleSubmit = () => {
-    setAgregado(true);
-    dispatch(addUsuario(newUser));
-    setNewUser({ Usuario: "", contrasena: "" });
+    if (newUser.Usuario === "" || newUser.contrasena === "") {
+      alert("Por favor completa todos los campos");
+      return;
+    } else {
+      setAgregado(true);
+      dispatch(addUsuario(newUser));
+      setNewUser({ Usuario: "", contrasena: "" });
+    }
   };
 
   return (
     <div className="registro">
       {agregado && (
         <div className="contenido-agregado">
-          <h3 className="titulo-agregado">Exelente</h3>
-          <h5 className="texto-agregado">
+          <h3 className="titulo-agregado">Excelente</h3>
+          <p className="texto-agregado">
             Tu usuario fue agregado correctamente
-          </h5>
+          </p>
           <NavLink to="/" className="boton-agregado">
-            Regresar
+            Continuar
           </NavLink>
         </div>
       )}
       {!agregado && (
         <div className="contenido-registro">
-          <h3 className="titulo-registro">Nuevo usuario</h3>
+          <h3 className="titulo-registro">Crear Usuario</h3>
           <div className="formulario-registro">
             <label className="label-registro">Nombre</label>
             <input

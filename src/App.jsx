@@ -5,7 +5,7 @@ import { Inicio } from "./pages/Inicio";
 import { Productos } from "./pages/Productos";
 import { Nosotros } from "./pages/Nosotros";
 import { Mapa } from "./pages/Mapa";
-import { Sesion } from "./pages/Sesion";
+import {Ingresar} from './components/Ingresar'
 import { Registrar } from "./components/Registrar";
 import { ErrorU } from "./components/ErrorU";
 import "./styles/App.css";
@@ -20,7 +20,7 @@ function App() {
           <Route path="/Productos" element={<Productos />} />
           <Route path="/Nosotros" element={<Nosotros />} />
           <Route path="/Mapa" element={<Mapa />} />
-          <Route path="/Sesion" element={<Sesion />} />
+          <Route path="/ingresar" element={<Ingresar />} />
           <Route path="/Registrar" element={<Registrar />} />
           <Route path="/ErrorU" element={<ErrorU />} />
         </Routes>

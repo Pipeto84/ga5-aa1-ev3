@@ -17,14 +17,14 @@ export const NavBar = () => {
       </NavLink>
       {
         user.acceso && (
-          <NavLink to="/sesion" className="nav-link-user">
+          <NavLink to="/ingresar" className="nav-link-user">
             {user.Usuario}
           </NavLink>
         )
       }
       {
         !user.acceso && (
-          <NavLink to="/sesion" className="nav-link">
+          <NavLink to="/ingresar" className="nav-link">
             Iniciar Sesión
           </NavLink>
         )

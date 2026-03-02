@@ -7,7 +7,7 @@
   justify-content: center;
 }
 .contenido-ingresoU {
-  background-color: rgb(209, 209, 209);
+  background-color: #87C19B;
   width: 500px;
   height: 400px;
   border-radius: 10px;
@@ -25,7 +25,7 @@
   margin-bottom: 50px;
 } 
 .texto-ingresoU {
-  font-size: 22px;
+  font-size: 24px;
   color: rgb(0, 0, 0);
   margin-top: 15px;
 }
@@ -34,7 +34,7 @@
   height: 40px;
   border-radius: 5px;
   border: none;
-  background-color: #4682B4;
+  background-color: #07c449ea;
   color: rgb(255, 255, 255);
   font-size: 25px;
   margin-top: 60px;

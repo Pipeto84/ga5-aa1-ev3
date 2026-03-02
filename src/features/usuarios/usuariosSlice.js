@@ -10,7 +10,7 @@ const initialState = [
     contrasena: "13579",
   },
   {
-    Usuario: "Cristian",
+    Usuario: "CristianA",
     contrasena: "24680",
   },
   {

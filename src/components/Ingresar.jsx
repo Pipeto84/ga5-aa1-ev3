@@ -74,9 +74,9 @@ export function Ingresar() {
       {acceso && (
         <div className="contenido-ingresoU">
           <h3 className="titulo-ingresoU">Bienvenido</h3>
-          <h5 className="texto-ingresoU">Tu ingreso fue exitoso</h5>
+          <p className="texto-ingresoU">Tu ingreso fue exitoso</p>
           <NavLink to="/" className="boton-ingresoU">
-            Regresar
+            Continuar
           </NavLink>
         </div>
       )}
