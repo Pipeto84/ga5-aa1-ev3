@@ -51,6 +51,11 @@ export function Ingresar() {
       window.location.href = "/ErrorU";
     }
   };
+  const handleCerrar = () => {
+    setAcceso(false);
+    setUsuario({ Usuario: "", contrasena: "", acceso: false });
+    dispatch(setUser({ Usuario: "", contrasena: "", acceso: false }));
+  }
   return (
     <div className="ingresar">
       {!acceso && (
@@ -80,6 +85,7 @@ export function Ingresar() {
           <NavLink to="/registrar" className="registro-link">
             Registrarse
           </NavLink>
+          <button className="boton-cerrar" onClick={handleCerrar}>Cerrar sesion</button>
         </div>
       )}
       {acceso && (

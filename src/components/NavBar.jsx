@@ -15,9 +15,20 @@ export const NavBar = () => {
       <NavLink to="/nosotros" className="nav-link">
         Nosotros
       </NavLink>
-      <NavLink to="/sesion" className="nav-link">
-        {user.acceso ? user.Usuario : "Iniciar Sesión"}
-      </NavLink>
+      {
+        user.acceso && (
+          <NavLink to="/sesion" className="nav-link-user">
+            {user.Usuario}
+          </NavLink>
+        )
+      }
+      {
+        !user.acceso && (
+          <NavLink to="/sesion" className="nav-link">
+            Iniciar Sesión
+          </NavLink>
+        )
+      }
     </nav>
   );
 };

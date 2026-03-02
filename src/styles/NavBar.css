@@ -10,6 +10,13 @@
   position: sticky;
   top: 0;
 }
+.nav-link-user {
+  text-decoration: none;
+  color: black;
+  padding: 5px 8px 5px 8px;
+  background-color: #72a3ca;
+  border-radius: 7px;
+}
 .nav-link {
   text-decoration: none;
   color: black;
