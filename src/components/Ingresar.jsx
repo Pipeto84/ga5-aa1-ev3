@@ -9,24 +9,7 @@ export function Ingresar() {
   const [acceso, setAcceso] = useState(false);
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
-  var Usuarios = [
-    {
-      Usuario: "Felipe",
-      contrasena: "12345",
-    },
-    {
-      Usuario: "CristianH",
-      contrasena: "13579",
-    },
-    {
-      Usuario: "Cristian",
-      contrasena: "24680",
-    },
-    {
-      Usuario: "q",
-      contrasena: "1",
-    },
-  ];
+  const Usuarios = useSelector((state) => state.usuarios);
   const [usuario, setUsuario] = useState({
     Usuario: "",
     contrasena: "",
