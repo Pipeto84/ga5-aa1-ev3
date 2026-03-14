@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(194, 209, 218);
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 18px;
@@ -9,6 +9,13 @@
   align-items: center;
   position: sticky;
   top: 0;
+}
+.nav-link-user {
+  text-decoration: none;
+  color: black;
+  padding: 5px 8px 5px 8px;
+  background-color: #87C19B;
+  border-radius: 7px;
 }
 .nav-link {
   text-decoration: none;

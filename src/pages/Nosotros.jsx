@@ -17,15 +17,15 @@ export const Nosotros = () => {
         <div className="otraInfo">
           <div className="mision">
             <h2 className="titulo">Misión</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium error ullam minima, maiores provident at aut placeat, non necessitatibus dignissimos, sed doloribus voluptatum cumque qui hic neque? Laudantium atque id aliquam illo error doloribus obcaecati nesciunt ratione quae corporis cumque autem veniam, necessitatibus optio magni! Error magnam quam odio!</p>
+            <p>Brindar soluciones eficientes en la venta, reparación y mantenimiento de radiadores para carros y motos, garantizando calidad, confiabilidad y satisfacción al cliente, mediante la implementación de un sistema de información que optimice el control de inventarios, mejore los procesos internos y fortalezca la organización empresarial.</p>
           </div>
           <div className="vision">
             <h2 className="titulo">Visión</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium error ullam minima, maiores provident at aut placeat, non necessitatibus dignissimos, sed doloribus voluptatum cumque qui hic neque? Laudantium atque id aliquam illo error doloribus obcaecati nesciunt ratione quae corporis cumque autem veniam, necessitatibus optio magni! Error magnam quam odio!</p>
+            <p>Ser una empresa líder y competitiva en el mercado de radiadores a nivel regional, reconocida por su excelencia en el servicio, eficiencia operativa, innovación en sus procesos y compromiso con la mejora continua, logrando expandirse a nuevos mercados y contribuir al desarrollo económico local.</p>
           </div>
           <div className="objetivo">
             <h2 className="titulo">Objetivo</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium error ullam minima, maiores provident at aut placeat, non necessitatibus dignissimos, sed doloribus voluptatum cumque qui hic neque? Laudantium atque id aliquam illo error doloribus obcaecati nesciunt ratione quae corporis cumque autem veniam, necessitatibus optio magni! Error magnam quam odio!</p>
+            <p>Implementar un sistema de información que permita optimizar la gestión, control y seguimiento del área de inventario en Radiadores S&T, mejorando la eficiencia operativa, la rentabilidad y la satisfacción del cliente.</p>
           </div>
         </div>
       </div>

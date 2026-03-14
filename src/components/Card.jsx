@@ -1,4 +1,3 @@
-import P1 from "../assets/Products/P1.jpeg";
 import "../styles/Card.css";
 
 export const Card = ({ producto }) => {

@@ -10,6 +10,9 @@
   align-items: center;
 }
 .infoInicio {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;

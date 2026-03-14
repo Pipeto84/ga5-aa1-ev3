@@ -23,6 +23,11 @@ export const Mapa = () => {
             Nosotros
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/ingresar" className="nav-link-mapa">
+            Iniciar sesión
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
